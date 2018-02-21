@@ -1,0 +1,102 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hang Out With Us</title>
+    <link rel="stylesheet" href="{{ site.github.url }}/css/style.css">
+  </head>
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11&appId=1872583256391247';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <body>
+
+    <header>
+      <section class="wedding-invite">
+        <div class="leafs">
+          <img src="/assets/border.png" alt="" style="">
+        </div>
+        <div class="sloth">
+          <img src="/assets/sloth.png" alt="">
+        </div>
+        <div class="">
+
+        </div>
+        <div class="wedding-invite__text">
+          <h1>Come Hang With Us</h1>
+
+        <p>We're getting married!</p>
+        </div>
+      </section>
+      <section>
+        <div class="wedding-invite__info">
+          <h1>Hugo & Manon</h1>
+          <p>invite you to come and</p>
+          <h1>celerbrate</h1>
+          <p>their engagement</p>
+          <br>
+          <p>Monday, 31st December 2018</p>
+          <p>120 Hepburn Gardens</p>
+          <p>St. Andrews, Scotland</p>
+          <br>
+        </div>
+      </section>
+    </header>
+
+    <nav class="">
+      <ul>
+        <li><button id="event__link" class="" onclick="openModal(this.id)" href="#">🍾The Event</button></li>
+        <li><button id="accomadation__link" class="" onclick="openModal(this.id)" href="#">🏠Accomadation</button></li>
+        <li><button id="location__link" class="" onclick="openModal(this.id)" href="#">✈️Travel</button></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+      <!-- Event -->
+      {% include event.html %}
+
+
+      <!-- Accomadation -->
+      {% include accomdation.html %}
+
+
+      <!-- Sights/Location -->
+      {% include travel.html %}
+
+
+      <!-- Comments -->
+      <section class="section__content" style="background-color:white;">
+        <br>
+        <h1>The Wall of Comments</h1>
+        <div class="">
+          <div class="fb-comments" data-href="http://mah2018.com" data-numposts="20" data-width="100%"></div>
+        </div>
+        
+      </section>
+    </main>
+
+
+
+    <footer class="">
+
+      <script type="text/javascript" src="/scripts/modal.js">
+
+      </script>
+    </footer>
+
+
+  </body>
+</html>

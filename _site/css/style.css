@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Georgia, serif;
+  letter-spacing: 1.2px; }
+
+body {
+  background-image: url(/assets/wet_snow.png);
+  margin: auto;
+  max-width: 800px; }
+
+header, nav {
+  background-color: #0b180d; }
+
+header, main, footer, nav {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0; }
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+p:first-of-type {
+  margin-top: 0; }
+
+/* The wedding invite */
+.wedding-invite {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  letter-spacing: 2px; }
+  .wedding-invite__text {
+    margin-top: auto;
+    margin-bottom: 30%;
+    text-align: center; }
+  .wedding-invite__info {
+    text-align: center;
+    color: white;
+    padding-bottom: 20%; }
+
+/* Border Image */
+.sloth {
+  display: flex; }
+  .sloth img {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.leafs img {
+  width: 100%;
+  max-width: 800px;
+  position: absolute; }
+
+/* Navigation */
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1rem 0 1rem 0;
+    margin: 0; }
+    nav ul li {
+      margin: auto;
+      flex-grow: 1;
+      flex-basis: calc(100/3);
+      text-align: center; }
+      nav ul li button {
+        border: none;
+        border-radius: 2px;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+        text-decoration: none;
+        color: #fff;
+        background-color: #938f12;
+        text-align: center;
+        letter-spacing: .5px;
+        -webkit-transition: .2s ease-out;
+        transition: .2s ease-out;
+        cursor: pointer;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+        nav ul li button:hover {
+          background-color: #e08d60;
+          -webkit-box-shadow: 0 3px 3px 0 rgba(250, 250, 250, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 500px) {
+  nav ul li {
+    padding: 0.5rem 0; }
+    nav ul li button {
+      padding: 0 0.4rem; } }
+/* Modals for Nav */
+#event__modal {
+  display: none; }
+  #event__modal .section__content {
+    text-align: center; }
+
+#accomadation__modal {
+  display: none; }
+
+#location__modal {
+  display: none; }
+
+/* info sections*/
+.section {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 1rem; }
+
+.section__header {
+  padding: 1rem 1rem; }
+
+.section__content {
+  padding: 1rem 1rem;
+  min-height: 500px; }

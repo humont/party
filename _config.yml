@@ -1,0 +1,15 @@
+---
+title: Party
+timezone: UTC
+
+email:
+description: Manon and Hugo are having a Party
+baseurl:
+url:
+github_username: humont
+markdown: kramdown
+plugins:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock

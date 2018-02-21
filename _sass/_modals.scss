@@ -1,0 +1,26 @@
+/* Modals for Nav */
+
+#event {
+
+  &__modal {
+    display: none;
+    
+    .section__content{
+      text-align: center;
+    }
+  }
+}
+
+#accomadation {
+
+  &__modal {
+    display: none;
+  }
+}
+
+#location {
+
+  &__modal {
+    display: none;
+  }
+}

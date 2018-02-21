@@ -1,0 +1,22 @@
+/* The wedding invite */
+
+.wedding-invite {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  letter-spacing: 2px;
+
+
+  &__text {
+    margin-top: auto;
+    margin-bottom: 30%;
+    text-align: center;
+  }
+
+  &__info {
+    text-align: center;
+    color: white;
+    padding-bottom: 20%;
+  }
+}
