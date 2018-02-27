@@ -21,6 +21,9 @@ function openModal(linkName) {
       document.getElementById('accomadation__modal').style.display = "none";
       document.getElementById('event__modal').style.display = "none";
     break;
-    default "event__link":
+    default:
+      document.getElementById('event__modal').style.display = "block";
+      document.getElementById('accomadation__modal').style.display = "none";
+      document.getElementById('location__modal').style.display = "none";
   }
 }

@@ -24,10 +24,10 @@ layout: default
     <header>
       <section class="wedding-invite">
         <div class="leafs">
-          <img src="/assets/border.png" alt="" style="">
+          <img src="{{ site.github.url }}/assets/border.png" alt="" style="">
         </div>
         <div class="sloth">
-          <img src="/assets/sloth.png" alt="">
+          <img src="{{ site.github.url }}/assets/sloth.png" alt="">
         </div>
         <div class="">
 
@@ -63,8 +63,6 @@ layout: default
 
     <main>
 
-
-
       <!-- Event -->
       {% include event.html %}
 
@@ -73,7 +71,7 @@ layout: default
       {% include accomdation.html %}
 
 
-      <!-- Sights/Location -->
+      <!-- travel -->
       {% include travel.html %}
 
 
@@ -92,7 +90,7 @@ layout: default
 
     <footer class="">
 
-      <script type="text/javascript" src="/scripts/modal.js">
+      <script type="text/javascript" src="{{ site.github.url }}/scripts/modal.js">
 
       </script>
     </footer>

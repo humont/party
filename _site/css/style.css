@@ -108,7 +108,7 @@ nav {
       padding: 0 0.4rem; } }
 /* Modals for Nav */
 #event__modal {
-  display: none; }
+  display: block; }
   #event__modal .section__content {
     text-align: center; }
 
